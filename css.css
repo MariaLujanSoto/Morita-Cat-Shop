@@ -1,0 +1,60 @@
+
+
+main{
+    background-image: url(img/fondomorita.webp);
+    
+    
+}
+
+.navbar{
+    background-color: purple;
+    text-align: center;
+}
+
+
+
+.card-body{
+    text-align: center;
+    background-color: white;  
+    width: 300px;
+    height: 450px;
+    margin-top: 20px;
+    border-radius: 50px ;
+    border: solid 3px black;
+
+}
+
+.boton-agregar{
+    border-radius: 10px ;
+    background-color: plum;
+    
+}
+
+.boton-eliminar{
+    background-color: plum;
+    border-radius: 100px ;
+    
+}
+.card-body img{
+    border-radius: 100px ;
+
+}
+
+.contenedor-productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.carrito-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#headerMoritaC{
+    background-color: plum;
+  }
+

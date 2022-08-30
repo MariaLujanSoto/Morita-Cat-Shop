@@ -1,0 +1,10 @@
+[
+    {"id":0, "nombre":"Alimento Excelent Adulto 3kg", "precio": 3500, "imagen":"./img/Excelentadulto.jpg", "cantidad":1},
+    {"id":1, "nombre":"Alimento Gati 3kg", "precio": 1500, "imagen": "./img/gati.jpg", "cantidad":1},
+    {"id":2, "nombre":"Alimento Sabrosito 1kg", "precio": 500, "imagen":"./img/sabrositos.jpg", "cantidad":1},
+    {"id":3, "nombre":"Alimento Cat Chow 1kg", "precio": 800, "imagen":"./img/catchow.jpg", "cantidad":1},
+    {"id":4, "nombre":"Sobrecito Whiskas", "precio": 150, "imagen":"./img/sobrecitowhiskas.jpg", "cantidad":1},
+    {"id":5, "nombre":"Alimento Hills 1kg", "precio": 1000, "imagen":"./img/hills.png","cantidad":1 },
+    {"id":6, "nombre":"Sobrecito Royal Cannin Kitten", "precio": 250, "imagen":"./img/sobrecitoRoyalKitten.jpg", "cantidad":1},
+    {"id":7, "nombre":"Sobrecito Felix", "precio": 150, "imagen":"./img/sobrecitofelix.jpg", "cantidad":1 }
+]
