@@ -158,20 +158,3 @@ botonVaciar.addEventListener('click', ()=>{
 })
 
 
-
-botonComprar.addEventListener("click", ()=>{
-    if (carrito.length >0){
-        
-    }else{
-        Swal.fire({
-            title: '¡ No hay nada para comprar !',
-            text: 'Volve y agrega algun articulo a tu carrito, no permitas que tu minino se ponga triste.',
-            imageUrl: 'img/gatitotriste.jpg',
-            imageWidth: 400,
-            imageHeight: 200,
-            imageAlt: 'Minino Triste',
-          })
-    }
-
-
-})

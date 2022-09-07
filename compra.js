@@ -5,7 +5,6 @@ console.log(carrito);
 
 let botonComprar = document.getElementById("btn-submit");
 
-
 const precioTotal = document.getElementById('precioTotal')
 
 carrito.forEach((prod) => {
@@ -41,6 +40,4 @@ function validarTamaño(event){
         
             }
 
-
     }
-
