@@ -3,7 +3,8 @@ let contenedorResumen = document.getElementById("resumenCompra");
 carrito = JSON.parse(localStorage.getItem("carrito"));
 console.log(carrito);
 
-let botonComprar = document.getElementById("btn-submit");
+
+let confirmarCompra = document.getElementById('confirmar-compra')
 
 const precioTotal = document.getElementById('precioTotal')
 
@@ -41,3 +42,12 @@ function validarTamaño(event){
             }
 
     }
+
+
+const compraConfirmada = () => {    
+        if (carrito.length != 0){  
+            localStorage.removeItem("carrito", JSON.stringify(carrito));      
+        }           
+    }
+
+confirmarCompra.addEventListener("click", compraConfirmada); 
