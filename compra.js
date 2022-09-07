@@ -1,16 +1,12 @@
 let contenedorResumen = document.getElementById("resumenCompra");
-// Traigo el carrito con los productos
+
 carrito = JSON.parse(localStorage.getItem("carrito"));
 console.log(carrito);
-// Busco el boton de comprar
+
 let botonComprar = document.getElementById("btn-submit");
 
 
 const precioTotal = document.getElementById('precioTotal')
-
-//---------------------------------------------------//
-//--------------------card compra-------------------//
-//--------------------------------------------------//
 
 carrito.forEach((prod) => {
     contenedorResumen.innerHTML += `
@@ -43,8 +39,8 @@ function validarTamaño(event){
     if(event.target.value.length ==4 || event.target.value.length == 9 ||event.target.value.length == 14 ){
         event.target.value += ' ';
         
+            }
+
+
     }
-
-}
-
 
