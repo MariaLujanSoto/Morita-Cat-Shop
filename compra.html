@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morita Cat Shop</title>
+    <link rel="shortcut Icon" href="img/moritalogo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://kit.fontawesome.com/f000064950.js" crossorigin="anonymous"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">   
+
+    <!--boostrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg shadow navbar-dark py-3  ">
+        <div class="container-fluid">
+          <img src="img/moritalogo.png" style="width: 100px;" >
+          <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navMenu" 
+          >
+          <span class="navbar-toggler-icon"></span>
+          </button>
+              <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 ml-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="inicio.html" >Inicio</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="clientes.html" >Clientes</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link active" href="index.html" >E-Shop</a>
+                  </li>
+                </ul>
+                
+          </div>
+        </div>
+                    
+      </nav>
+
+<h2 class="mt-4 " style="margin-left:50px ;">Resumen de Compra:</h2>
+
+<section >
+      <h3 class="mt-3" style="text-align: center;">Items seleccionados:</h3>
+      <table class="table table-hover" >
+        <thead style="text-align: center;">
+            <tr >
+                <th scope="col" style="width: 30%;">Muestra</th>                            
+                <th scope="col" >Nombre</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Precio</th>                                        
+            </tr>
+        </thead>
+        <tbody id="resumenCompra">
+        <table style="text-align: center; align-items: center; margin-left: 25%; border-radius: 50px;">
+
+        </table>
+        </tbody>
+        <strong><p class="precioProducto2" style="text-align:center; margin-bottom: 20px;" >Monto Total: $ <span id="precioTotal">0</span></p></strong>
+
+        
+        <section class="button">                    
+            <a href="index.html#contenedor-productos" style="text-decoration: none; margin-left: 45%; "><button type="submit" class="seguir" style="background-color: rgb(169, 238, 247);
+                border-radius: 10px ; ">Seguir comprando</button></a>
+        </section> 
+    
+</section>           
+  
+ 
+
+
+
+<section>
+    <h2 class="mt-4" style="margin-left:50px ;">Método de Pago:</h2>
+
+
+
+
+<form action="" id="tarjeta" class="tarjeta">
+    <div class="grupo">
+        <label for="inputNumero">Número Tarjeta</label>
+        <input type="text"  maxlength="19"  oninput="validarTamaño(event)" required>
+    </div>
+    <div class="grupo">
+        <label for="inputNombre">Nombre Tarjeta</label>
+        <input type="text"  required >
+    </div>
+                    
+    <div class="grupo ccv">
+        <label for="inputCCV">CCV</label>
+        <input type="text" maxlength="3" required>
+    </div>
+    
+    <button type="submit" class="btn-enviar" id="confirmar-compra" style="border-radius: 10px ;
+    background-color: plum; width: 200px; margin-top: 20px;">Confirmar compra</button>                 
+</form>                
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer >
+        
+        <div class="container text-center">
+          <footer class="py-3 my-4 ">
+          <p class="text-center text-muted my-0">Medios de pago:</p>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-paypal"></i>
+          <i class="fa-brands fa-cc-amex"></i>
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="inicio.html" class="nav-link px-2 text-muted">Inicio</a></li>
+              <li class="nav-item"><a href="clientes.html" class="nav-link px-2 text-muted">Clientes</a></li>
+              <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">E-Shop</a></li>     
+            </ul>
+            <p class="text-center text-muted">&copy; 2022 Morita Cat-Shop, Inc.</p>
+            
+            
+          </footer>
+        </div>
+        
+        <div class="b-example-divider"></div>
+        </footer>
+        
+  
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+      
+<!--boostrap JS-->
+
+
+<script src="compra.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+crossorigin="anonymous"></script>
+
+</body>
+</html>

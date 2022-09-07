@@ -2,16 +2,58 @@
 
 main{
     background-image: url(img/fondomorita.webp);
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 
 .navbar{
-    background-color: purple;
+    background: rgb(165, 43, 165);
     text-align: center;
+    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+
+.head{
+  
+    background-image: url(img/fondoop.png);
+    margin: 50px  ;
+    height: 650px;
+    padding-top: 200px;
+    padding-left:50px;
+    margin-bottom: 100px;
+    font-family: cursive;
+}
+
+.bienvenida{
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 700px;
+    background-color: rgb(228, 137, 52);
+    border-radius: 20% 80% 20%/40% 10% 60%;
+    box-shadow: 2px 7px 20px -5px rgba(38, 63, 59, 0.788);
+}
+
+.productos{
+    background: linear-gradient(to right,  plum, white);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 100px;
 }
 
 
+#modal{
+    width: 700px;
+    max-height: 100%;
+    background-color: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    overflow-y: scroll;
+    transition: all 0.4s ease;
+    position: fixed;
+}
 
 .card-body{
     text-align: center;
@@ -24,10 +66,21 @@ main{
 
 }
 
+.card-body2{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-radius: 50px;
+    border: solid 3px black;
+    width: 500px;
+    margin-left: 0px;
+   
+}
+
+
 .boton-agregar{
     border-radius: 10px ;
     background-color: plum;
-    
 }
 
 .boton-eliminar{
@@ -39,22 +92,61 @@ main{
     border-radius: 100px ;
 
 }
+.card-body2 img{
+    border-radius: 150px ;
+
+}
+
+
 
 .contenedor-productos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
+    padding: 30px;
 }
 
 .carrito-contenedor{
-    display: flex;
-    flex-wrap: wrap;
+   
+    
     align-items: center;
     margin-left: 20%;
 }
 
 #headerMoritaC{
-    background-color: plum;
+    background-color: rgb(210, 119, 238);
   }
 
+
+.tarjeta{
+    text-align: center;
+    align-items: center;
+    
+}
+
+.grupo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+   
+    
+}
+
+.item-cuenta{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.precioProducto2{
+    height: 30px;
+    
+
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius:  15px ;
+    background-color: violet;
+    border-radius: 50% 80% 20%/40% 54% 46% 60%;
+    
+    
+}

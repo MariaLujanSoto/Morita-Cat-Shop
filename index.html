@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morita Cat Shop</title>
-    <link rel="shortcut Icon" href="img/moritalogo2.png" type="image/x-icon">
+    <link rel="shortcut Icon" href="img/moritalogo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script src="https://kit.fontawesome.com/f000064950.js" crossorigin="anonymous"></script>
 
@@ -23,8 +25,8 @@
 
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg shadow navbar-dark py-3 menu">
+<header class="fixed-top">
+<nav class="navbar navbar-expand-lg shadow navbar-dark py-3  ">
   <div class="container-fluid">
     <img src="img/moritalogo.png" style="width: 100px;" >
     <button 
@@ -38,16 +40,13 @@
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ms-auto mb-2 ml-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="staff.html">Staff</a>
+              <a class="nav-link " aria-current="page" href="inicio.html" >Inicio</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="galeria.html">Clientes</a>
+              <a class="nav-link" href="clientes.html" >Clientes</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href=".html">Shop</a>
+              <a class="nav-link active" href="index.html" >E-Shop</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -57,48 +56,62 @@
             <i class="fa-solid fa-cart-shopping "></i><span id="contadorCarrito" class="badge bg-light text-black ms-1 rounded-pill">0</span>
             </button>  
                   
-            <!--------Modal 1--->
-            <div class="modal fade" id="exampleModal" tabindex="-1"
-                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog modal-m modal-border modal-carrito">
-
-                    <div class="modal-content modal-carrito" id="modal" class="mi-carrito" id="carritoLista">
-                        <div class="modal-header" id="headerMoritaC">
-                          <img src="img/moritalogo2.png" style="width: 100px; "><h5 class="titulo-carrito"class="modal-title" id="exampleModalLabel">Tu Carrito Morita</h5>
-                            <button id="carritoCerrar" type="button" class="btn-close" style="background-color:purple" data-bs-dismiss="modal"></button>
-                        </div>
-
-                        <div id="carrito-contenedor" class="carrito-contenedor" >
-                          
-                        
-                          
-                        </div>
-
-                        <p class="precioProducto" style="text-align:center ;" >Monto Total: $ <span id="precioTotal">0</span></p>
-                        
-
-                        <button type="button" id="btnComprar" class="btn-comprar" style="background-color:plum">Comprar</button>
-                          
-                        <button type="button" class="btn" id="vaciar-carrito" >Vaciar Carrito</button>
-                </div>
-          </div>
-          </div>
-
+            
               
       </form>
     </div>
   </div>
               
 </nav>
+</header>
 
 
-<h2 class="bienvenida mt-3 mb-3 text-center ">Bienvenido a Morita Cat-Shop</h2>
+<!--------Modal 1--->
+<div class="modal fade" id="exampleModal" tabindex="-1"
+aria-labelledby="exampleModalLabel" aria-hidden="true" style="align-items:end ;">
+<div class="modal-dialog modal-dialog modal-m modal-border modal-carrito">
+
+    <div class="modal-content modal-carrito" id="modal" class="mi-carrito" id="carritoLista" >
+        <div class="modal-header" id="headerMoritaC">
+          <img src="img/moritalogo2.png" style="width: 100px; "><h5 class="titulo-carrito"class="modal-title" id="exampleModalLabel">Tu Carrito Morita</h5>
+            <button id="carritoCerrar" type="button" class="btn-close" style="background-color:gray" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div id="carrito-contenedor" class="carrito-contenedor" >
+          
+        
+          
+        </div>
+
+        <strong><p class="precioProducto" style="text-align:center ;" >Monto Total: $ <span id="precioTotal">0</span></p></strong>
+        
+
+        <button type="button" id="btnComprar" class="btn-comprar" style="background-color:plum" ><a href="compra.html" style="text-decoration: none; color: black;">
+
+        Comprar</a></button>
+          
+        <button type="button" class="btn" id="vaciar-carrito"  >Vaciar Carrito</button>
+</div>
+</div>
+</div>
 
 
+<section class="head">
+  <div class="bienvenida  ">
+    <h2>Bienvenido a Morita Cat-Shop</h2>
+    <h3>Solo lo mejor para tu compañero de vida.</h3>
+  </div>
+  
 
-<main id="contenedor-productos" class="contenedor-productos">
+</section>
+
+<div>
+  <h2 class="productos">Nuestros Productos</h2>
+</div>
+
+<section id="contenedor-productos" class="contenedor-productos">
     
-</main>
+</section>
 
 
 
@@ -113,7 +126,6 @@
 
 <footer >
         
-
       <div class="container text-center">
         <footer class="py-3 my-4 ">
         <p class="text-center text-muted my-0">Medios de pago:</p>
@@ -122,12 +134,11 @@
         <i class="fa-brands fa-cc-paypal"></i>
         <i class="fa-brands fa-cc-amex"></i>
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Staff</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Clientes</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Shop</a></li>     
+            <li class="nav-item"><a href="inicio.html" class="nav-link px-2 text-muted">Inicio</a></li>
+            <li class="nav-item"><a href="clientes.html" class="nav-link px-2 text-muted">Clientes</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">E-Shop</a></li>     
           </ul>
-          <p class="text-center text-muted">&copy; 2022 Morita Cat-Shop, Inc</p>
+          <p class="text-center text-muted">&copy; 2022 Morita Cat-Shop, Inc.</p>
           
           
         </footer>

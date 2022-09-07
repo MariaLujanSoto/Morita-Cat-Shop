@@ -35,7 +35,7 @@ function crearCards(){
         const div = document.createElement('div')
         div.classList.add('producto')
         div.innerHTML = `
-                <div class="card-body">
+                <div class="card-body ">
                     <img src='${producto.imagen}'class="imgCards " style="widht: 100px">
                     <h2>${producto.nombre}</h2>
                     <p class="precioProducto">Precio: $${producto.precio}</p>
@@ -56,6 +56,8 @@ function crearCards(){
             style: {
               background: "lume",
             }
+            
+            
           }).showToast();
            
             
@@ -118,7 +120,7 @@ const actualizarCarrito = () =>{
         const div = document.createElement('div')
         div.className = ('productoEnCarrito')
         div.innerHTML = `
-        <div class="card-body ">
+        <div class="card-body2 ">
         <img src='${prod.imagen}'class="imgCards " style="widht: 40px">
                 <p>${prod.nombre}</p>
                 <p class="precioProducto">Precio: $${prod.precio}</p>
@@ -127,7 +129,7 @@ const actualizarCarrito = () =>{
 
             </div>
                 
-        
+         
         `
          contenedorCarrito.appendChild(div)
 
@@ -154,16 +156,10 @@ botonVaciar.addEventListener('click', ()=>{
 })
 
 
+
 botonComprar.addEventListener("click", ()=>{
     if (carrito.length >0){
-        Swal.fire({
-            title: 'Compra Confirmada',
-            text: '¡ Hiciste muy feliz a tu minino !',
-            imageUrl: 'img/gatitofeliz.jpg',
-            imageWidth: 400,
-            imageHeight: 200,
-            imageAlt: 'Minino Feliz',
-          })
+        
     }else{
         Swal.fire({
             title: '¡ No hay nada para comprar !',
@@ -177,4 +173,3 @@ botonComprar.addEventListener("click", ()=>{
 
 
 })
-
