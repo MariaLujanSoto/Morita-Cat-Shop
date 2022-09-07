@@ -5,7 +5,6 @@ console.log(carrito);
 // Busco el boton de comprar
 let botonComprar = document.getElementById("btn-submit");
 
-let confirmarCompra = document.getElementById('confirmar-compra')
 
 const precioTotal = document.getElementById('precioTotal')
 
@@ -42,19 +41,10 @@ const actualizarCarrito = () => {
 
 function validarTamaño(event){
     if(event.target.value.length ==4 || event.target.value.length == 9 ||event.target.value.length == 14 ){
-        event.target.value += ' '
+        event.target.value += ' ';
+        
     }
+
 }
 
-confirmarCompra.addEventListener('click',()=>{
-    Swal.fire({
-        position: 'center',
-        icon: 'success',
-        title: 'Compra Confirmada, lo contactaremos a la brevedad.',
-        showConfirmButton: false,
-        timer: 2000
-       })
 
-
-
-})
