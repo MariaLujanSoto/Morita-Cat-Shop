@@ -99,6 +99,7 @@ const eliminarDelCarrito = (prodId) =>{
     const item = carrito.find((prod)=>prod.id === prodId)
     const indice = carrito.indexOf(item)
     carrito.splice(indice,1)
+    localStorage.setItem('carrito', JSON.stringify(carrito))
     actualizarCarrito()
     Toastify({
         text: "Producto Eliminado!",
@@ -143,7 +144,8 @@ const actualizarCarrito = () =>{
 }
 
 botonVaciar.addEventListener('click', ()=>{
-    carrito.length = 0
+    carrito.length = []; // escribo un carrito vacio
+    localStorage.setItem('carrito', JSON.stringify(carrito)); // lo guarda en el localStorage
     actualizarCarrito()
     Swal.fire({
         position: 'center',
