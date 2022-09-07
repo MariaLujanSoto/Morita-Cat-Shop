@@ -1,6 +1,6 @@
 let contenedorResumen = document.getElementById("resumenCompra");
 
-carrito = JSON.parse(localStorage.getItem("carrito"));
+const carrito = JSON.parse(localStorage.getItem('carrito')) ?? [];
 console.log(carrito);
 
 
